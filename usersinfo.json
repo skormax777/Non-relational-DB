@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "5ebea0509fb9e21f74b0aa58"
+  },
+  "Login": "Vasyl",
+  "FirstName": "Vasyl",
+  "LastName": "Z",
+  "HashedPassword": "15254261892683383831945121422499762149238196375650167971754025555172902112",
+  "LastLogin": "15.05.2020 21:25:00",
+  "Followers": [
+    "Marko"
+  ],
+  "Following": [
+    "Nina"
+  ]
+},{
+  "_id": {
+    "$oid": "5ebea07d9fb9e21f74b0aa5a"
+  },
+  "Login": "Nina",
+  "FirstName": "Nina",
+  "LastName": "S",
+  "HashedPassword": "15254261892683383831945121422499762149238196375650167971754025555172902112",
+  "Following": [],
+  "Followers": [
+    "Vasyl",
+    "Marko"
+  ],
+  "LastLogin": "15.05.2020 21:40:57"
+},{
+  "_id": {
+    "$oid": "5ebea4b49fb9e20abcc4c439"
+  },
+  "Login": "Ivan",
+  "FirstName": "Ivan",
+  "LastName": "K",
+  "HashedPassword": "15254261892683383831945121422499762149238196375650167971754025555172902112",
+  "Following": [],
+  "LastLogin": "15.05.2020 21:25:31",
+  "Followers": [
+    "Marko"
+  ]
+},{
+  "_id": {
+    "$oid": "5ebed70b9fb9e20fa8cbaa86"
+  },
+  "Login": "Vira",
+  "FirstName": "Vira",
+  "LastName": "M",
+  "HashedPassword": "15254261892683383831945121422499762149238196375650167971754025555172902112",
+  "LastLogin": "15.05.2020 21:24:10",
+  "Followers": [
+    "Marko"
+  ]
+},{
+  "_id": {
+    "$oid": "5ebed7699fb9e20fa8cbaa87"
+  },
+  "Login": "Marko",
+  "FirstName": "Marko",
+  "LastName": "R",
+  "HashedPassword": "15254261892683383831945121422499762149238196375650167971754025555172902112",
+  "LastLogin": "15.05.2020 21:22:58",
+  "Following": [
+    "Vasyl",
+    "Ivan",
+    "Nina",
+    "Vira"
+  ]
+}]
