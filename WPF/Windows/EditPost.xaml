@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF.Windows.EditPost"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Height="400" Width="350"
+        WindowStyle="None"
+        ResizeMode="NoResize" 
+        MouseMove="Window_MouseMove"
+        WindowStartupLocation="CenterScreen" 
+        Background="WhiteSmoke"
+        FontFamily="Georgia">
+    <Grid Background="#FF243378">
+        <Label Content="Please change your post "  Margin="20,40,20,0" FontSize="21" Foreground="White"/>
+        <Button Width="149" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="182,0,19,10" Content="Save" Background="#FF243378" Foreground="White" FontSize="20" Click="Save_Click" Height="30" BorderBrush="White"/>
+        <Button Width="148" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20,0,182,10" Content="Back" Background="#FF243378" Foreground="White" FontSize="20" Click="Cancel_Click" Height="30" BorderBrush="White"/>
+        <TextBox Name="Text" BorderThickness="2" Margin="20,102,19.333,45.667" AcceptsReturn="True" FontSize="22" FontStyle="Italic" TextChanged="Text_TextChanged" Background="#FF243378" BorderBrush="White" Foreground="White" CaretBrush="White"/>
+    </Grid>
+</Window>

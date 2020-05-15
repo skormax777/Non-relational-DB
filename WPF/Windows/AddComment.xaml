@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF.Windows.AddComment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Height="400" Width="350"
+        ResizeMode="NoResize" 
+        MouseMove="Window_MouseMove"
+        WindowStartupLocation="CenterScreen" 
+        Background="WhiteSmoke"
+        FontFamily="Georgia">
+    <Grid>
+        <StackPanel Background="#FF243378">
+            <Label Name="userLogin" Content="User:"  Margin="20 20 20 0" FontSize="18" Foreground="White"/>
+            <Label Name="postText" Content="Text of post" FontSize="18" Margin="20,0,20,0" Height="80" HorizontalAlignment="Right" Foreground="White"/>
+            <Label Content="Your comment:" Margin="20 0 20 0"  FontSize="22" Foreground="White"/>
+            <TextBox Name="Text" BorderThickness="2" Margin="20,0,19.667,0" AcceptsReturn="True" FontSize="22" TextChanged="Text_TextChanged" Height="154" Foreground="White" Background="#FF243378" BorderBrush="White" />
+        </StackPanel>
+        <Button Width="144" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,20,10" Content="Save" Background="#FF243378" Foreground="White" FontSize="20" Click="Save_Click" Height="30" BorderBrush="White"/>
+        <Button Width="144" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20,0,180,10" Content="Back" Background="#FF243378" Foreground="White" FontSize="20" Click="Cancel_Click" Height="30" BorderBrush="White"/>
+    </Grid>
+</Window>
