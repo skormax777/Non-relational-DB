@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="WPF.UserControls.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Height="600" Width="800"
+        Background="WhiteSmoke"
+        FontFamily="Georgia">
+
+    <Grid Background="#FF243378">
+        <StackPanel VerticalAlignment="Center" Margin="100,94,100,57" Height="449">
+            <Label Content="Edit Profile Information"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" BorderBrush="White" BorderThickness="2" Foreground="White" FontFamily="Arial" />
+            <Label Content="FirstName" Margin="0, 5, 0, -5" Foreground="White"/>
+            <TextBox Name="firstName" Margin="0,5,0,-5" FontSize="15" />
+            <Label Content="LastName" Margin="0, 5, 0, -5" Foreground="White"/>
+            <TextBox Name="lastName" Margin="0,5,0,-5" FontSize="15" />
+            <Label Content="Login" Margin="0, 5, 0, -5" Foreground="White"/>
+            <TextBox Name="login" Margin="0,5,0,10"  FontSize="15"/>
+            <Button Margin="516,0,4,0" Content="Save" Background="#FF243378" BorderThickness="2" Foreground="WhiteSmoke" Height="20" Click="Save_Click" BorderBrush="White" FontFamily="Arial"/>
+
+            <Label Content="Change Password" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" BorderBrush="White" BorderThickness="2" FontFamily="Arial" />
+            <Label Content="Old password" Margin="0, 5, 0, -5" Foreground="White"/>
+            <PasswordBox Name="old_pwd" Margin="0,5,0,-5" FontSize="15"/>
+            <Label Content="New password" Margin="0, 5, 0, -5" Foreground="White"/>
+            <PasswordBox Name="pwd" Margin="0,5,0,-5" FontSize="15"/>
+            <Label Content="Repeat new password" Margin="0, 5, 0, -5" Foreground="White"/>
+            <PasswordBox Name="pwd2" Margin="0,5,0,-5" FontSize="15"/>
+            <Button Margin="516,16,4,0" Content="Save" Background="#FF243378" BorderThickness="2" Foreground="WhiteSmoke" Height="20" Click="Save_Pwd_Click" BorderBrush="White" FontFamily="Arial"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
